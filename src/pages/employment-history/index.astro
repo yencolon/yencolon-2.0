@@ -1,0 +1,13 @@
+---
+import Section from "../../components/common/Section.astro";
+import Layout from "../../layouts/Layout.astro";
+import { GLOBAL } from "../../lib/variables";
+import EmploymentHistory from "../../components/employment/EmploymentHistory.astro";
+---
+
+<Layout title="Employment History">
+  <Section class="my-16">
+    <EmploymentHistory employmentHistory={GLOBAL.employmentHistory} />
+  </Section>
+</Layout>
+    

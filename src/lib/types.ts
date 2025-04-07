@@ -81,3 +81,52 @@ export type ArticleFrontmatter = {
    */
   filename: string;
 };
+
+
+export type EmploymentHistoryFrontmatter = {
+  /**
+   * The title of the employment history
+   */
+  title: string;
+
+  /**
+   * The company of the employment history
+   */
+  company: string;
+
+  /**
+   * The description of the employment history
+   */
+  description: string;
+
+  /**
+   * The bullet points of the employment history
+   */
+  bullets: string[];
+
+  /**
+   * The start date of the employment history in W3C format
+   */
+  startDate: string;
+
+  /**
+   * The end date of the employment history in W3C format
+   */
+  endDate: string;
+  
+  /**
+   * The city of the employment history
+   */
+  city: string;
+
+  /**
+   * 
+   */
+  country: string;
+  
+  /**
+   * The stack of the employment history
+   */
+  stack: string[];
+
+};

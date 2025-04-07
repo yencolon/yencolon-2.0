@@ -7,20 +7,20 @@ export const GLOBAL = {
   username: "Yen Colon",
   rootUrl: "https://yencolon.com",
   shortDescription: "Software Engineer",
-  longDescription: `Software Engineer with over 5 years of experience in Full-stack development using Java, Kotlin, JavaScript, and
-TypeScript. I have successfully contributed to diverse projects within the Financial and AI sectors, working
-collaboratively in both small and medium-sized teams. My expertise lies in designing scalable solutions,
-optimizing system performance, and delivering high-quality code. I am highly adaptable, deeply passionate
-about solving complex problems, and thrive in team-oriented environments`,
+  longDescription: `Over 5 years of experience in Full-stack development.`,
+  aboutDescription: `Hi, I'm Yen, a software engineer with a passion for building products that help people.
+    I'm a person who loves to learn and explore new things. In my free time, I like going outdoors, reading about geography, history, and technology.`,
 
   // Social media links
   githubProfile: "https://github.com/yencolon",
-  twitterProfile: "https://twitter.com/yencolon",
   linkedinProfile: "https://www.linkedin.com/in/yencolon/",
+  devProfile: "https://dev.to/yencolon",
 
   // Common text names used throughout the site
   employmentHistoryName: "Employment History",
   projectsName: "Projects",
+  technologiesName: "Technologies",
+  aboutName: "About",
   viewAll: "View All",
 
   // Common descriptions used throughout the site
@@ -35,7 +35,7 @@ about solving complex problems, and thrive in team-oriented environments`,
   menu: {
     home: "/",
     employmentHistory: "/employment-history",
-    projects: "/projects",
+   // projects: "/projects",
   },
 
   // Employment history
@@ -98,5 +98,31 @@ about solving complex problems, and thrive in team-oriented environments`,
       title: "Project 1",
       description: "Description of Project 1",
     }
+  ],
+
+  // Technologies
+  technologies: [
+    {
+      name: "Typescript",
+    },
+    {
+      name: "Javascript",
+    },
+    {
+      name: "Java",
+    },
+    {
+      name: "Kotlin",
+    },
+    {
+      name: "React",
+    },
+    {
+      name: "Angular",
+    },
+    {
+      name: "Node",
+    }
+
   ]
 };

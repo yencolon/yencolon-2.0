@@ -1,6 +1,6 @@
 ---
-import Anchor from "./common/Anchor.astro";
-import type { EmploymentHistoryFrontmatter } from "../lib/types";
+import Anchor from "../common/Anchor.astro";
+import type { EmploymentHistoryFrontmatter } from "../../lib/types";
 
 type Props = EmploymentHistoryFrontmatter;
 
@@ -21,11 +21,12 @@ console.log(stack);
 
 <div class="flex flex-col gap-3 pb-8">
   <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
-    <Anchor url={"/"} class="text-xl">
-      {title}
-    </Anchor>
+    <span
+      class="text-xl zag-offset underline font-medium flex items-center"
+      >{title}</span
+    >
     <div class="flex gap-2">
-      <Anchor url={company} class="text-sm">{company}</Anchor>
+      <span class="text-sm">{company}</span>
     </div>
   </div>
   <p class="zag-text zag-transition">
@@ -38,15 +39,21 @@ console.log(stack);
   <p class="zag-text zag-transition">
     {city}, {country}
   </p>
-  <p class="zag-text zag-transition">
-    {
-      stack.map((tech) => (
-        <span class="text-sm bg-gray-100 px-2 py-1 rounded-full">{tech}</span>
-      ))
-    }
-  </p>
 
   <ul class="list-disc list-inside zag-text zag-transition">
     {bullets.map((bullet) => <li>{bullet}</li>)}
   </ul>
+
+  <div class="flex flex-wrap gap-2">
+    <p class="zag-text zag-transition font-bold">
+      <span class="text-md">Stack:</span>
+      {
+        stack.map((tech) => (
+          <span class="text-sm px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">
+            {tech}
+          </span>
+        ))
+      }
+    </p>
+  </div>
 </div>

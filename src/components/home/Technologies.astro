@@ -1,0 +1,19 @@
+---
+import { GLOBAL } from "../../lib/variables";
+
+---
+
+<div class="flex justify-between items-center w-full">
+  <h3 class="font-display text-lg sm:text-xl leading-loose">
+    {GLOBAL.technologiesName}
+  </h3>
+</div>
+<ul class="my-2 flex flex-wrap gap-2">
+  {
+    GLOBAL.technologies.map((technology) => (
+      <li class="text-sm">
+        <span>{technology.name}</span>
+      </li>
+    ))
+  }
+</ul>
